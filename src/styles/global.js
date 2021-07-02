@@ -6,7 +6,6 @@ const GlobalStyle = createGlobalStyle`
       *, *::before, *::after {
         box-sizing: border-box;
         font-family: 'Lato', sans-serif; 
-        background-color: #DDF2F3;
       }
 `;
 

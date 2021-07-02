@@ -2,12 +2,13 @@ const theme = {
   palette: {
     primary: '#f45d48',
     secondary: '#0a8080',
-    background: '#f8f5f2',
+    background: '#DDF2F3',
     white: '#ffffff',
     black: '#222525',
     lightgray: '#e2e2e2',
     gray: '#8a8a8a',
     darkgray: '#505050',
+    header: '#34B8C2',
   },
   typography: {
     title: {

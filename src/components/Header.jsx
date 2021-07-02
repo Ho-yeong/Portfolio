@@ -9,21 +9,21 @@ const S = {
     top: 0;
     z-index: 1000;
     transition: all 0.2s ease-in-out;
-    background-color: ${({ isScroll, theme }) => (isScroll ? theme.palette.white : 'none')};
+    background-color: ${({ isScroll, theme }) => (isScroll ? theme.palette.header : 'none')};
     box-shadow: ${props => (props.isScroll ? '0 0 16px 8px rgba(0, 0, 0, 0.03)' : 'none')};
   `,
   Header: styled.header`
     width: 100%;
     max-width: 1180px;
     margin: auto;
+    padding-top: 0.5rem;
     transition: all 0.2s ease-in-out;
-    height: ${props => (props.isScroll ? '70px' : '100px')};
+    height: ${props => (props.isScroll ? '100px' : '110px')};
     display: flex;
     flex-direction: row;
     align-items: center;
   `,
   Logo: styled.span`
-    color: ${({ isScroll, theme }) => (isScroll ? theme.palette.black : theme.palette.white)};
     font-weight: 900;
     font-size: 1.5rem;
     flex: 0 0 25%;
@@ -36,8 +36,7 @@ const S = {
     justify-content: center;
   `,
   NavigationItem: styled.a`
-    color: ${props => props.theme.palette.white};
-    color: ${({ isScroll, theme }) => (isScroll ? theme.palette.black : theme.palette.white)};
+    color: ${({ isScroll, theme }) => (isScroll ? theme.palette.white : theme.palette.black)};
     margin: 0 1rem;
     cursor: pointer;
     &:hover {
@@ -76,8 +75,10 @@ const Header = () => {
   return (
     <S.Wrapper isScroll={isScroll}>
       <S.Header isScroll={isScroll}>
-        <S.Logo isScroll={isScroll}></S.Logo>
-        <Logo width={'100px'} height={'100px'} />
+        <S.Logo isScroll={isScroll}>
+          <Logo width={'90px'} height={'90px'} />
+        </S.Logo>
+
         <S.Navigation>
           {NAVIGATION_ITEMS.map(item => (
             <S.NavigationItem key={item} isScroll={isScroll}>
