@@ -1,6 +1,6 @@
 const theme = {
   palette: {
-    primary: '#f45d48',
+    primary: '#239aa3',
     secondary: '#0a8080',
     background: '#DDF2F3',
     white: '#ffffff',
@@ -12,47 +12,39 @@ const theme = {
   },
   typography: {
     title: {
-      fontFamily: '"Gelasio", serif',
       fontSize: '4rem',
       fontWeight: 600,
     },
     subtitle: {
-      fontFamily: '"Gelasio", serif',
-      fontSize: '2.5rem',
+      fontSize: '2rem',
       fontWeight: 600,
       lineHeight: 1.1,
     },
     heading: {
-      fontFamily: '"Gelasio", serif',
       fontSize: '1.5rem',
       fontWeight: 500,
     },
     subheading: {
-      fontFamily: '"Lato", sans-serif',
       fontSize: '1.25rem',
       fontWeight: 700,
     },
     label: {
-      fontFamily: '"Lato", sans-serif',
       fontWeight: 700,
+      fontSize: '2rem',
     },
     description: {
-      fontFamily: '"Lato", sans-serif',
       lineHeight: 1.5,
     },
     body: {
       fontFamily: '"Lato", sans-serif',
     },
     caption: {
-      fontFamily: '"Lato", sans-serif',
       fontSize: '0.875rem',
     },
     button: {
-      fontFamily: '"Lato", sans-serif',
       fontSize: '0.875rem',
     },
     textbutton: {
-      fontFamily: '"Lato", sans-serif',
       fontWeight: 700,
       fontSize: '1rem',
       border: 0,

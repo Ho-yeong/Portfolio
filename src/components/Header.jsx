@@ -21,6 +21,7 @@ const S = {
     height: ${props => (props.isScroll ? '100px' : '110px')};
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
   `,
   Logo: styled.span`
@@ -86,7 +87,6 @@ const Header = () => {
             </S.NavigationItem>
           ))}
         </S.Navigation>
-        <S.ButtonWrapper></S.ButtonWrapper>
       </S.Header>
     </S.Wrapper>
   );
