@@ -5,6 +5,7 @@ import Feature from './components/Feature';
 import Nums from './components/Nums';
 import Animals from './components/Animal';
 import Slide from './components/Slide';
+import Main2 from './components/Main2';
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Nums />
       <Animals />
       <Slide />
+      <Main2 />
       <Feature />
     </>
   );

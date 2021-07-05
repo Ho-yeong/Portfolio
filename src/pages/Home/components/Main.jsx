@@ -9,7 +9,6 @@ const S = {
     width: 100%;
     height: 80rem;
   `,
-  Pic: styled.div``,
   Wrapper: styled.div`
     width: 100%;
     height: 100%;
@@ -38,7 +37,6 @@ const S = {
 const Main = () => {
   return (
     <S.Background>
-      <S.Pic />
       <S.Wrapper>
         <S.Title></S.Title>
         <S.Description></S.Description>

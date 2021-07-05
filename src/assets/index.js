@@ -13,3 +13,4 @@ export { default as story6 } from './story/story-6.png';
 export { default as story7 } from './story/story-7.png';
 export { default as story8 } from './story/story-8.png';
 export { default as story9 } from './story/story-9.png';
+export { default as desc } from './desc.png';
