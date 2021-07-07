@@ -9,7 +9,7 @@ const S = {
     top: 0;
     z-index: 1000;
     transition: all 0.2s ease-in-out;
-    background-color: ${({ isScroll, theme }) => (isScroll ? theme.palette.header : 'none')};
+    background-color: ${({ isScroll, theme }) => (isScroll ? theme.palette.white : 'none')};
     box-shadow: ${props => (props.isScroll ? '0 0 16px 8px rgba(0, 0, 0, 0.03)' : 'none')};
   `,
   Header: styled.header`
@@ -36,12 +36,16 @@ const S = {
     display: flex;
     justify-content: center;
   `,
-  NavigationItem: styled.a`
-    color: ${({ isScroll, theme }) => (isScroll ? theme.palette.white : theme.palette.black)};
+  NavigationItem: styled.div`
+    color: ${({ isScroll, theme }) => (isScroll ? theme.palette.black : theme.palette.white)};
     margin: 0 1rem;
     cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0 0.3rem 0.1rem 0.3rem;
     &:hover {
       opacity: 0.5;
+      border-bottom: 1px solid black;
     }
   `,
   ButtonWrapper: styled.div`
@@ -52,7 +56,7 @@ const S = {
   `,
 };
 
-const NAVIGATION_ITEMS = ['Home', 'About', 'Services', 'Blog', 'Contact'];
+const NAVIGATION_ITEMS = ['Home', 'About', 'Services', 'PortFolio', 'Contact'];
 
 const Header = () => {
   const [isScroll, setIsScroll] = useState(false);
@@ -76,14 +80,12 @@ const Header = () => {
   return (
     <S.Wrapper isScroll={isScroll}>
       <S.Header isScroll={isScroll}>
-        <S.Logo isScroll={isScroll}>
-          <Logo width={'90px'} height={'90px'} />
-        </S.Logo>
+        <S.Logo isScroll={isScroll}></S.Logo>
 
         <S.Navigation>
           {NAVIGATION_ITEMS.map(item => (
             <S.NavigationItem key={item} isScroll={isScroll}>
-              {item}
+              {item.toUpperCase()}
             </S.NavigationItem>
           ))}
         </S.Navigation>

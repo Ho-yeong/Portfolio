@@ -8,11 +8,10 @@ const theme = {
     lightgray: '#e2e2e2',
     gray: '#8a8a8a',
     darkgray: '#505050',
-    header: '#34B8C2',
   },
   typography: {
     title: {
-      fontSize: '4rem',
+      fontSize: '4.5rem',
       fontWeight: 600,
     },
     subtitle: {

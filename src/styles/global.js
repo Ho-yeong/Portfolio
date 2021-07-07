@@ -5,7 +5,8 @@ const GlobalStyle = createGlobalStyle`
      ${reset};
       *, *::before, *::after {
         box-sizing: border-box;
-        font-family: 'Lato', sans-serif; 
+        font-family: 'Lato', sans-serif;
+        user-select: none;
       }
 `;
 
