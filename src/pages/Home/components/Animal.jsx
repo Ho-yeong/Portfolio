@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { cat, dog, gorilla } from '../../../assets';
 import { useScrollFadeIn } from '../../../hooks';
 
 const S = {
@@ -66,17 +65,14 @@ const S = {
 
 const WORKS_ITEMS = [
   {
-    image: cat,
     title: '고양이',
     label: 'Dec 14th, 2019',
   },
   {
-    image: dog,
     title: '봉댕이',
     label: 'Dec 14th, 2019',
   },
   {
-    image: gorilla,
     title: '고릴라',
     label: 'Dec 14th, 2019',
   },

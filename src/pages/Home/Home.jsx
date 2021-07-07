@@ -1,13 +1,14 @@
 import React from 'react';
 import { Header } from '../../components';
 import Main from './components/Main';
+import About from './components/About';
 
 const Home = () => {
   return (
     <>
-      <Header />
+      <Header id="Home" />
       <Main />
-      <div style={{ height: '100vh' }}></div>
+      <About />
     </>
   );
 };

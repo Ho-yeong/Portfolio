@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import styled from 'styled-components';
-import { Logo } from './index';
+import { Link } from 'react-scroll';
 
 const S = {
   Wrapper: styled.div`
@@ -16,9 +16,8 @@ const S = {
     width: 100%;
     max-width: 1180px;
     margin: auto;
-    padding-top: 0.5rem;
     transition: all 0.2s ease-in-out;
-    height: ${props => (props.isScroll ? '100px' : '110px')};
+    height: ${props => (props.isScroll ? '80px' : '100px')};
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -56,7 +55,7 @@ const S = {
   `,
 };
 
-const NAVIGATION_ITEMS = ['Home', 'About', 'Services', 'PortFolio', 'Contact'];
+const NAVIGATION_ITEMS = ['Home', 'About', 'Services', 'Project', 'Contact'];
 
 const Header = () => {
   const [isScroll, setIsScroll] = useState(false);
@@ -85,7 +84,15 @@ const Header = () => {
         <S.Navigation>
           {NAVIGATION_ITEMS.map(item => (
             <S.NavigationItem key={item} isScroll={isScroll}>
-              {item.toUpperCase()}
+              <Link
+                to={item}
+                smooth={true}
+                onClick={() => {
+                  setIsScroll(true);
+                }}
+              >
+                {item.toUpperCase()}
+              </Link>
             </S.NavigationItem>
           ))}
         </S.Navigation>

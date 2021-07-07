@@ -1,17 +1,1 @@
-export { default as pam } from './pam.png';
-export { default as pam2 } from './pam2.jpg';
-export { default as logo } from './logo.png';
-export { default as cat } from './cat.jpg';
-export { default as dog } from './dog.jpg';
-export { default as gorilla } from './gorilla.jpg';
-export { default as story1 } from './story/story-1.png';
-export { default as story2 } from './story/story-2.png';
-export { default as story3 } from './story/story-3.png';
-export { default as story4 } from './story/story-4.png';
-export { default as story5 } from './story/story-5.png';
-export { default as story6 } from './story/story-6.png';
-export { default as story7 } from './story/story-7.png';
-export { default as story8 } from './story/story-8.png';
-export { default as story9 } from './story/story-9.png';
-export { default as desc } from './desc.png';
 export { default as gun } from './gun.glb';

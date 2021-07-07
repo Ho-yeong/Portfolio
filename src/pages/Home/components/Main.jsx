@@ -1,6 +1,6 @@
-import React, { createContext, Suspense, useEffect, useState, useContext } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { Canvas, useFrame } from 'react-three-fiber';
+import { Canvas } from 'react-three-fiber';
 import { OrbitControls } from '@react-three/drei';
 import { Gun3D } from '../../../components/meshes';
 import TypingEffect from './TypingEffect';
@@ -76,6 +76,7 @@ const Main = () => {
       return () => {
         setProgress(100);
       };
+      //eslint-disable-next-line
     }, []);
     return '';
   };
