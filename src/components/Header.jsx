@@ -88,7 +88,11 @@ const Header = () => {
                 to={item}
                 smooth={true}
                 onClick={() => {
-                  setIsScroll(true);
+                  if (item === 'Home') {
+                    setIsScroll(false);
+                  } else {
+                    setIsScroll(true);
+                  }
                 }}
               >
                 {item.toUpperCase()}

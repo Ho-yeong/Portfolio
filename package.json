@@ -16,6 +16,7 @@
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.2",
     "react-spring": "^9.2.3",
+    "react-swipe": "^6.0.4",
     "react-three-fiber": "^6.0.13",
     "react-top-loading-bar": "^2.0.1",
     "react-typing-effect": "^2.0.5",
