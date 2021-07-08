@@ -4,15 +4,17 @@ import Main from './components/Main';
 import About from './components/About';
 import Services from './components/Service';
 import Projects from './components/Project';
+import Contact from './components/Contact';
 
 const Home = () => {
   return (
     <>
-      <Header id="Home" />
+      <Header />
       <Main />
       <About />
       <Services />
       <Projects />
+      <Contact />
     </>
   );
 };

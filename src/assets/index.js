@@ -1,1 +1,11 @@
+export { default as story1 } from './story/story-1.png';
+export { default as story2 } from './story/story-2.png';
+export { default as story3 } from './story/story-3.png';
+export { default as story4 } from './story/story-4.png';
+export { default as story5 } from './story/story-5.png';
+export { default as story6 } from './story/story-6.png';
+export { default as story7 } from './story/story-7.png';
+export { default as story8 } from './story/story-8.png';
+export { default as story9 } from './story/story-9.png';
 export { default as gun } from './gun.glb';
+export { default as noPhotoIcon } from './no-photos.png';

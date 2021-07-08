@@ -7,7 +7,7 @@ import TypingEffect from './TypingEffect';
 import Plane from '../../../components/meshes/Plane';
 import LoadingBar from 'react-top-loading-bar';
 
-const gitLogo =
+export const gitLogo =
   'https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png';
 
 const S = {
@@ -29,21 +29,25 @@ const S = {
     flex-direction: column;
     justify-content: center;
   `,
-  Title: styled.h1`
+  Title: styled.div`
     ${props => props.theme.typography.title};
     color: #fff;
     position: absolute;
     top: 35%;
     left: 50%;
   `,
-  Description: styled.p`
+  Description: styled.div`
     ${props => props.theme.typography.description};
     color: ${props => props.theme.palette.white};
     font-size: 1.5rem;
     font-weight: 300;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
+    @media only screen and (min-width: 1440px) {
+      top: 45%;
+      left: 50%;
+    }
   `,
   Sns: styled.div`
     filter: invert(100%);
@@ -61,13 +65,22 @@ const S = {
       transform: scale(1.05);
     }
   `,
+  Alert: styled.div`
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    color: ${props => props.theme.palette.white};
+    font-size: 1.2rem;
+    font-weight: 600;
+    animation: blink 1.2s ease-in-out infinite alternate;
+  `,
 };
 
 const Main = () => {
   const [progress, setProgress] = useState(0);
 
   const onClick = () => {
-    window.location = 'http://github.com/Ho-yeong';
+    window.open('http://github.com/Ho-yeong', '_blank').focus();
   };
 
   const LazyCall = ({ setProgress }) => {
@@ -101,21 +114,24 @@ const Main = () => {
           <OrbitControls enableZoom={false} autoRotate={true} />
         </Canvas>
       </Suspense>
-      <S.Title>
-        <TypingEffect text={["I'm Hoyeong."]} speed={80} eraseDelay={20000} eraseSpeed={150} typingDelay={500} />
-      </S.Title>
-      <S.Description>
-        <div>Game Developer & Web Developer located in Busan</div>
-        <TypingEffect
-          staticText={'Speciallized in'}
-          text={['Node.js', 'React', 'Go']}
-          speed={80}
-          typingDelay={20}
-          eraseSpeed={50}
-          eraseDelay={2500}
-        />
-        <S.Sns onClick={onClick} />
-      </S.Description>
+      <S.Wrapper>
+        <S.Title>
+          <TypingEffect text={["I'm Hoyeong."]} speed={80} eraseDelay={20000} eraseSpeed={150} typingDelay={500} />
+        </S.Title>
+        <S.Description>
+          <div>Game Developer & Web Developer located in Busan</div>
+          <TypingEffect
+            staticText={'Speciallized in'}
+            text={['Node.js', 'React', 'Go']}
+            speed={80}
+            typingDelay={50}
+            eraseSpeed={35}
+            eraseDelay={2300}
+          />
+          <S.Sns onClick={onClick} />
+        </S.Description>
+        <S.Alert>Drag Screen</S.Alert>
+      </S.Wrapper>
     </S.Background>
   );
 };

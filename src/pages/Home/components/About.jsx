@@ -6,11 +6,8 @@ const S = {
   Background: styled.section`
     width: 100%;
     background-color: ${props => props.theme.palette.lightgray};
-    margin-top: 55%;
-    @media only screen and (min-width: 1920px) {
-      /* styles for browsers larger than 1440px; */
-      margin-top: 70%;
-    }
+    margin-top: 85rem;
+    margin-bottom: 10rem;
   `,
   Wrapper: styled.div`
     width: 100%;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-scroll';
+import { Link, scrollSpy, animateScroll as scroll } from 'react-scroll';
 
 const S = {
   Wrapper: styled.div`
@@ -47,6 +47,9 @@ const S = {
       border-bottom: 1px solid black;
     }
   `,
+  NavItemText: styled.span`
+    ${({ active }) => (active ? 'border-bottom: 1px solid black' : '')};
+  `,
   ButtonWrapper: styled.div`
     flex: 0 0 25%;
     max-width: 25%;
@@ -55,10 +58,16 @@ const S = {
   `,
 };
 
-const NAVIGATION_ITEMS = ['Home', 'About', 'Services', 'Project', 'Contact'];
+const NAVIGATION_ITEMS = ['Home', 'About', 'Services', 'Projects', 'Contact'];
 
 const Header = () => {
+  useEffect(() => {
+    scroll.scrollToTop();
+    scrollSpy.update();
+  }, []);
+
   const [isScroll, setIsScroll] = useState(false);
+  const [selected, setSelected] = useState('');
 
   const handleScroll = useCallback(() => {
     if (window.pageYOffset > 0) {
@@ -87,15 +96,23 @@ const Header = () => {
               <Link
                 to={item}
                 smooth={true}
+                spy={true}
+                offset={-200}
+                onSetActive={() => {
+                  setSelected(item);
+                }}
                 onClick={() => {
                   if (item === 'Home') {
-                    setIsScroll(false);
+                    scroll.scrollToTop();
+                    setTimeout(() => {
+                      setIsScroll(false);
+                    }, 500);
                   } else {
                     setIsScroll(true);
                   }
                 }}
               >
-                {item.toUpperCase()}
+                <S.NavItemText active={selected === item ? true : false}>{item.toUpperCase()}</S.NavItemText>
               </Link>
             </S.NavigationItem>
           ))}
