@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.20ed1257.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.20ed1257.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.dfb0455d.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.dfb0455d.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.79fba9a2.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.79fba9a2.js.map",
     "static/js/2.611658fa.chunk.js": "/portfolio/static/js/2.611658fa.chunk.js",
@@ -11,21 +11,25 @@
     "index.html": "/portfolio/index.html",
     "static/js/2.611658fa.chunk.js.LICENSE.txt": "/portfolio/static/js/2.611658fa.chunk.js.LICENSE.txt",
     "static/media/Oswald-SemiBold.031050ad.ttf": "/portfolio/static/media/Oswald-SemiBold.031050ad.ttf",
+    "static/media/aws.a6688a1a.png": "/portfolio/static/media/aws.a6688a1a.png",
+    "static/media/drawing.18c530da.png": "/portfolio/static/media/drawing.18c530da.png",
+    "static/media/graphql.b2d2c480.png": "/portfolio/static/media/graphql.b2d2c480.png",
     "static/media/gun.30e55c98.glb": "/portfolio/static/media/gun.30e55c98.glb",
+    "static/media/java.4c169138.png": "/portfolio/static/media/java.4c169138.png",
+    "static/media/jenkins.0e5ea257.png": "/portfolio/static/media/jenkins.0e5ea257.png",
+    "static/media/mongodb.e12fdb8b.png": "/portfolio/static/media/mongodb.e12fdb8b.png",
+    "static/media/mysql.2f305442.png": "/portfolio/static/media/mysql.2f305442.png",
     "static/media/no-photos.4f712c5d.png": "/portfolio/static/media/no-photos.4f712c5d.png",
-    "static/media/story-1.fd319606.png": "/portfolio/static/media/story-1.fd319606.png",
-    "static/media/story-2.d2ee8cc6.png": "/portfolio/static/media/story-2.d2ee8cc6.png",
-    "static/media/story-3.e147156f.png": "/portfolio/static/media/story-3.e147156f.png",
-    "static/media/story-4.35e7c0fa.png": "/portfolio/static/media/story-4.35e7c0fa.png",
-    "static/media/story-5.defbe70a.png": "/portfolio/static/media/story-5.defbe70a.png",
-    "static/media/story-6.d328fbc3.png": "/portfolio/static/media/story-6.d328fbc3.png",
-    "static/media/story-7.2f3974fa.png": "/portfolio/static/media/story-7.2f3974fa.png",
-    "static/media/story-8.3a7bf0d1.png": "/portfolio/static/media/story-8.3a7bf0d1.png",
-    "static/media/story-9.866648cf.png": "/portfolio/static/media/story-9.866648cf.png"
+    "static/media/nodejs.15e2e80e.png": "/portfolio/static/media/nodejs.15e2e80e.png",
+    "static/media/postgresql.d7b1786e.png": "/portfolio/static/media/postgresql.d7b1786e.png",
+    "static/media/react.b9a14f34.png": "/portfolio/static/media/react.b9a14f34.png",
+    "static/media/redis.459d1992.png": "/portfolio/static/media/redis.459d1992.png",
+    "static/media/slack.47225062.png": "/portfolio/static/media/slack.47225062.png",
+    "static/media/uber.14f48e66.png": "/portfolio/static/media/uber.14f48e66.png"
   },
   "entrypoints": [
     "static/js/runtime-main.79fba9a2.js",
     "static/js/2.611658fa.chunk.js",
-    "static/js/main.20ed1257.chunk.js"
+    "static/js/main.dfb0455d.chunk.js"
   ]
 }
