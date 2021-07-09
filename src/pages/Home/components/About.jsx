@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ProfileImage from '../../../components/ProfileImage';
+import { me } from '../../../assets';
 
 const S = {
   Background: styled.section`
@@ -65,7 +66,7 @@ const About = () => {
           <S.Description>I'm a native Korean Speaker and can speak English, Japanese</S.Description>
           <S.Description>I'm not only a faster learner but also trying to learn anytime, anywhere</S.Description>
         </div>
-        <ProfileImage width="300px" height="300px" image={'https://avatars.githubusercontent.com/u/58277160?v=4'} />
+        <ProfileImage width="300px" height="300px" image={me} />
       </S.Wrapper>
     </S.Background>
   );

@@ -2,6 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 import { useScrollFadeIn } from '../../../hooks';
 import { Glitch, Glow, ScanLines } from './Project';
+import {
+  awsLogo,
+  goLogo,
+  graphqlLogo,
+  javaLogo,
+  jenkinsLogo,
+  mongodbLogo,
+  mysqlLogo,
+  nodeJsLogo,
+  postgresqlLogo,
+  reactLogo,
+  redisLogo,
+  typeScriptLogo,
+} from '../../../assets';
 
 const S = {
   Wrapper: styled.div`
@@ -79,71 +93,62 @@ const S = {
 
 const WORKS_ITEMS = [
   {
-    image:
-      'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png',
+    image: nodeJsLogo,
     title: 'Node.js',
     label: 'Main',
   },
   {
-    image:
-      'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png',
+    image: reactLogo,
     title: 'React',
     label: 'Main',
   },
   {
-    image:
-      'https://camo.githubusercontent.com/5ac61e5d2b553a9d5f8d41dcab1d7ef0a4373013ceebfd7d21d2429d78dbcc63/68747470733a2f2f696d672e737461636b73686172652e696f2f736572766963652f313030352f4f3641637a7766565f343030783430302e706e67',
+    image: goLogo,
     title: 'Go',
     label: 'Middle',
   },
   {
-    image:
-      'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/graphql/graphql.png',
+    image: graphqlLogo,
     title: 'GraphQL',
     label: 'Middle',
   },
   {
-    image: 'https://img.stackshare.io/service/1612/bynNY5dJ.jpg',
+    image: typeScriptLogo,
     title: 'TypeScript',
     label: 'Middle',
   },
   {
-    image:
-      'https://camo.githubusercontent.com/9dbe17311c10b4d044938f25101777bb3aa2a33148a12de298b2f4cfc346049e/68747470733a2f2f696d672e737461636b73686172652e696f2f736572766963652f343730322f6a6176612d382d6c6f676f2e706e67',
+    image: javaLogo,
     title: 'Java',
     label: 'Low',
   },
   {
-    image:
-      'https://camo.githubusercontent.com/a43c50963df8cc82e208f540c0e933ea54a9c4e64953935592b0f158e30f6889/68747470733a2f2f696d672e737461636b73686172652e696f2f736572766963652f313032352f6c6f676f2d6d7973716c2d313730783137302e706e67',
+    image: mysqlLogo,
     title: 'MySQL',
     label: 'Middle',
   },
   {
-    image: 'https://img.stackshare.io/service/1028/ASOhU5xJ.png',
+    image: postgresqlLogo,
     title: 'PostgreSQL',
     label: 'Middle',
   },
   {
-    image:
-      'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png',
+    image: mongodbLogo,
     title: 'MongoDB',
     label: 'Low',
   },
   {
-    image: 'https://img.stackshare.io/service/1031/redis.png',
+    image: redisLogo,
     title: 'Redis',
     label: 'Low',
   },
   {
-    image:
-      'https://camo.githubusercontent.com/be82102c236a82155d4bde9c80a859be45ff612d1457016963ada083dab1feea/68747470733a2f2f696d672e737461636b73686172652e696f2f736572766963652f333330302f31366666616538633636376264626336613439363966366630323039303635322e706e67',
+    image: awsLogo,
     title: 'AWS',
     label: 'Middle',
   },
   {
-    image:
-      'https://camo.githubusercontent.com/bbbd25e5f702e48ae672f5e51ad8d049cf10fec7b19a8917380a92a17f511d09/68747470733a2f2f696d672e737461636b73686172652e696f2f736572766963652f3637302f6a656e6b696e732e706e67',
+    image: jenkinsLogo,
     title: 'Jenkins',
     label: 'Low',
   },

@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { useScrollClipPath } from '../../../hooks';
 import ReactSwipe from 'react-swipe';
-import { gitLogo } from './Main';
 import { NoPhoto } from '../../../components';
+import { gitLogo, uberShot, drawingShot, slackShot } from '../../../assets';
 
 const S = {
   Background: styled.section`
@@ -211,13 +211,13 @@ const Projects = () => {
 
   const projects = [
     {
-      image: 'https://user-images.githubusercontent.com/58277160/113515780-7f27d900-95b1-11eb-8181-9b3d77a97611.png',
+      image: uberShot,
       url: 'https://github.com/Ho-yeong/uber-eats-clone',
       title: 'Uber Eats Clone',
       description: ['Node.js', 'TypeScript', 'Nest.js', 'GraphQL', 'React', 'AWS S3', 'PostgreSQL'],
     },
     {
-      image: 'https://user-images.githubusercontent.com/58277160/111113385-08e11980-85a5-11eb-9269-6a2a6fc88452.png',
+      image: drawingShot,
       url: 'https://github.com/Ho-yeong/realtime-nodejs',
       title: 'Real time Drawing Game',
       description: ['Node.js', 'Express', 'Socket.io', 'Pug'],
@@ -228,7 +228,7 @@ const Projects = () => {
       description: ['Go'],
     },
     {
-      image: 'https://user-images.githubusercontent.com/58277160/111109447-15ae3f00-859e-11eb-80c6-f5930ea54d3a.png',
+      image: slackShot,
       url: 'https://github.com/Ho-yeong/slack',
       title: 'Slack Clone',
       description: ['Node.js', 'React', 'GraphQL', 'MongoDB', 'JWT'],

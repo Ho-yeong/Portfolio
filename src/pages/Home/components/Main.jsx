@@ -6,9 +6,7 @@ import { Gun3D } from '../../../components/meshes';
 import TypingEffect from './TypingEffect';
 import Plane from '../../../components/meshes/Plane';
 import LoadingBar from 'react-top-loading-bar';
-
-export const gitLogo =
-  'https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png';
+import { gitLogo } from '../../../assets';
 
 const S = {
   Background: styled.section`
