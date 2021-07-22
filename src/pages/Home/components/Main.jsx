@@ -83,7 +83,7 @@ const Main = () => {
 
   const LazyCall = ({ setProgress }) => {
     useEffect(() => {
-      setProgress(70);
+      setProgress(20);
       return () => {
         setProgress(100);
       };

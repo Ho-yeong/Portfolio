@@ -62,7 +62,7 @@ const About = () => {
           <S.Title>About Me</S.Title>
           <S.Description style={{ color: 'gray ' }}>Game Developer & Web Developer</S.Description>
           <br />
-          <S.Description>I'm currently working at Treenod in Hae-Un-Dae, Busan, South Korea</S.Description>
+          <S.Description>I'm currently in Hae-Un-Dae, Busan, South Korea</S.Description>
           <S.Description>I'm a native Korean Speaker and can speak English, Japanese</S.Description>
           <S.Description>I'm not only a faster learner but also trying to learn anytime, anywhere</S.Description>
         </div>
