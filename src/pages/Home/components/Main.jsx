@@ -117,7 +117,7 @@ const Main = () => {
           <TypingEffect text={["I'm Hoyeong."]} speed={80} eraseDelay={20000} eraseSpeed={150} typingDelay={500} />
         </S.Title>
         <S.Description>
-          <div>Game Developer & Web Developer located in Busan</div>
+          <div>Game Developer & Web Developer located in Seoul</div>
           <TypingEffect
             staticText={'Speciallized in'}
             text={['Node.js', 'React', 'Go']}
