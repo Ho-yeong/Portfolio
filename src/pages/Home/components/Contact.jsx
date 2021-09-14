@@ -38,7 +38,7 @@ const Contact = () => {
             <AiTwotonePhone /> &nbsp; +82 10-7663-5663
           </S.Description>
           <S.Description>
-            <FiMapPin /> &nbsp; Hae-un-Dae, Busan, South Korea
+            <FiMapPin /> &nbsp; Gangnam, Seoul, South Korea
           </S.Description>
           <S.Description>
             <AiOutlineMail />
